@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="请输入图形验证码"
+        android:textColor="#ff333333"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        style="@style/CoupleLayout"
+        android:layout_marginTop="@dimen/y40">
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/cet_dialog_bitmapcode"
+            style="@style/EditText.Null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/register_bitmap_code"
+            android:imeOptions="actionDone"
+            android:maxLength="4" />
+
+
+        <ImageView
+            android:id="@+id/iv_imgYanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/base_horizontal_line" />
+
+    <com.commom.widget.NoDoubleClickButton
+        android:id="@+id/btn_dialog_next_reigster"
+        style="@style/primary_button"
+        android:layout_marginTop="24dp"
+        android:text="@string/forgot_pwd_next_step_1" />
+
+</LinearLayout>

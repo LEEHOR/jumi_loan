@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    tools:context="com.cashloan.jumidai.ui.homeLoan.LoanDetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20">
+
+                <LinearLayout
+                    style="@style/CoupleLayout.Line"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y30"
+                    android:paddingTop="@dimen/y30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/loan_money"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_loan_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginStart="@dimen/x50"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp"
+                        tools:text="123" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_yuan"
+                        android:textColor="@color/text_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.Line"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y30"
+                    android:paddingTop="@dimen/y30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/loan_limit"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_loan_period"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginStart="@dimen/x50"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/day"
+                        android:textColor="@color/text_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="visible"
+                    style="@style/CoupleLayout.Line"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y30"
+                    android:paddingTop="@dimen/y30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/loan_fee"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_service_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginStart="@dimen/x50"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_yuan"
+                        android:textColor="@color/text_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.Line"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y30"
+                    android:paddingTop="@dimen/y30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/loan_real"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_real_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginStart="@dimen/x50"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_yuan"
+                        android:textColor="@color/text_grey" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/CoupleLayout.Line"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y30"
+                    android:paddingTop="@dimen/y30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/loan_bank"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_card"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginStart="@dimen/x50"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.Line"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/y30"
+                    android:paddingTop="@dimen/y30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/loan_card"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_card_num"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginStart="@dimen/x50"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/x10"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/x30"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loan_tip_1"
+                    android:textColor="@color/text_grey" />
+
+                <TextView
+                    android:id="@+id/tv_repay_leftDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_color_principal" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loan_tip_2"
+                    android:textColor="@color/text_grey" />
+
+                <TextView
+                    android:id="@+id/tv_money_to_repay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_color_principal" />
+            </LinearLayout>
+
+            <com.commom.widget.NoDoubleClickTextView
+                android:id="@+id/apply"
+                style="@style/primary_button"
+                android:layout_marginTop="@dimen/y50"
+                android:text="@string/loan_apply" />
+
+            <LinearLayout
+                android:id="@+id/ll_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y40"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginStart="@dimen/x30"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/ck_agreement"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="@dimen/x12"
+                    android:button="@drawable/check_selector"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loan_deal"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/text_size_h4" />
+
+                    <TextView
+                        android:id="@+id/tv_agreement_name"
+                        android:layout_width="@dimen/x300"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_color_principal"
+                        android:textSize="@dimen/text_size_h4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/empty"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                tools:src="@drawable/icon_wait" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

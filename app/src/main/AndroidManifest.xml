@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cashloan.jumidai">
+
+    <!-- Required -->
+    <permission
+        android:name="com.cashloan.jumidai.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.cashloan.jumidai.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 获取GSM网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许获取Wi-Fi网络状态改变信息 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许拨号 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许读取短信息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 允许发送短信息 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 手机读取权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序监控一个将收到短信息，记录或处理 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读取程序信息  IMEI -->
+    <uses-permission android:name="android.permission.READ0_PHONE_STATE" />
+    <!-- 照相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 读取通话记录 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- 修改通话记录 -->
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <!-- 允许不同用户的应用之间可以产生交互 -->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 获取地理信息位置 -->
+    <!-- 精确定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 粗糙定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 允许程序更新手机电池统计信息 -->
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 可选权限，不声明此部分权限将放弃部分设备信息的采集，对数据分析及设备指纹的精准度有一定影响 -->
+    <!-- 允许程序获取当前或最近运行的应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--魔蝎SDK集成  权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.cashloan.jumidai.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo2"
+        android:label="${APP_NAME}"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup,icon,label">
+
+        <!--适配全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <!-- URL Router -->
+        <activity
+            android:name="com.github.mzule.activityrouter.router.RouterActivity"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 改成自己的scheme -->
+                <data android:scheme="wolverine" />
+            </intent-filter>
+        </activity>
+
+        <!-- 下载 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 高的地图key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${MAP_GD_KEY}" />
+
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 友盟的key与渠道 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_KEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${APP_CHANNEL_VALUE}" />
+
+        <!-- jpush相关内容 -->
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="${applicationId}.DataProvider"
+            android:exported="true"
+            tools:replace="android:authorities" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.cashloan.jumidai.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cashloan.jumidai.jpush.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="6fd833b75602cd2d9cacc01d"
+            tools:replace="android:value" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!--魔蝎SDK集成  start -->
+
+        <activity android:name="com.moxie.client.MainActivity" />
+        <activity
+            android:name="com.moxie.client.accessible.AccessibleCrawlerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="com.moxie.client.accessible.AccessibleCrawlerService"
+            android:accessibilityFlags="flagReportViewIds"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/accessibility_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessible_crawler_config" />
+        </service>
+
+        <!--魔蝎SDK集成  end -->
+
+
+        <activity
+            android:name="com.cashloan.jumidai.ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.main.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.main.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeLoan.LoanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeRepay.RepayDeatilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.LoanRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.BindBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.BindedCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.CreditCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.FaceVerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.EmergencyContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.PhoneOperatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.WorkInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.MoreInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.WorkInfoImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.user.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.user.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.SetPayPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.UpdatePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.SettingAdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.user.activity.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.user.activity.ForgetPayPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.GdMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.main.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cashloan.jumidai.ui.homeMine.activity.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

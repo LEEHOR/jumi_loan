@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y240"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/pop_pwd_title"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_h1" />
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="@dimen/x37"
+                android:layout_height="@dimen/y37"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/icon_close" />
+        </RelativeLayout>
+
+        <cn.pedant.SweetAlert.PasswordInputView
+            android:id="@+id/pwd"
+            style="@style/CoupleLayout.Line"
+            android:layout_height="@dimen/y90"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/backgroundColor"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@color/divide_line" />
+
+        <TextView
+            android:id="@+id/forget"
+            style="@style/CoupleLayout"
+            android:gravity="center_horizontal"
+            android:text="@string/pop_pwd_forgot"
+            android:textColor="@color/app_color_principal"
+            android:textSize="@dimen/text_size_h3" />
+    </LinearLayout>
+</LinearLayout>

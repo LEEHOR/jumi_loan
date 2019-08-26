@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.EmergencyContactActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x20"
+                android:paddingTop="@dimen/x10"
+                android:text="@string/credit_lineal_kin"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/text_size_h6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/linker_relation"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/relation1"
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        tools:text="父子" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/linker_name"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_contact_name1"
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        tools:text="123" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x20"
+                android:paddingTop="@dimen/x10"
+                android:text="@string/credit_other_kin"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/text_size_h6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/linker_relation"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/relation2"
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_weight="3"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/linker_name"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_contact_name2"
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_weight="3"
+                        android:gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

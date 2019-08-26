@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:background="@color/c_999999" />
+
+    <GridView
+        android:id="@+id/gv_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_horizontal_line"
+        android:horizontalSpacing="@dimen/size_0_5"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/size_0_5" />
+
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.WorkInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x10"
+            android:paddingLeft="@dimen/x20"
+            android:paddingTop="@dimen/x10"
+            android:text="@string/credit_work_tips"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_h6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/CoupleLayout.LineLeft"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_company_name"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <com.commom.widget.editText.ClearEditText
+                    android:id="@+id/cet_company_name"
+                    style="@style/EditText.Null"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="@string/work_company_name_hint"
+                    android:inputType="text"
+                    android:maxLength="50" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout.LineLeft"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_company_phone"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <com.commom.widget.editText.ClearEditText
+                    android:id="@+id/cet_company_phone"
+                    style="@style/EditText.Null"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="@string/work_company_phone_hint"
+                    android:inputType="number"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout.LineLeft"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_company_address"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:id="@+id/tv_work_companyAddress"
+                    style="@style/BasicTheme.TextView.Arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_weight="3"
+                    android:hint="@string/work_company_address_toast"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_silver" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout.Line"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_company_address"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_h3"
+                    android:visibility="invisible" />
+
+                <com.commom.widget.editText.ClearEditText
+                    android:id="@+id/cet_address_detail"
+                    style="@style/EditText.Null"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="@string/work_company_address_hint"
+                    android:inputType="text"
+                    android:maxLength="64" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout.LineLeft"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_photo"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:id="@+id/is_upload"
+                    style="@style/BasicTheme.TextView.Arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginStart="@dimen/x20"
+                    android:layout_weight="3"
+                    android:hint="@string/work_photo_hint"
+                    android:textColorHint="@color/hint_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_time"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:id="@+id/tv_work_time"
+                    style="@style/BasicTheme.TextView.Arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginStart="@dimen/x20"
+                    android:layout_weight="3"
+                    android:hint="@string/credit_no_must"
+                    android:textColorHint="@color/hint_grey" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

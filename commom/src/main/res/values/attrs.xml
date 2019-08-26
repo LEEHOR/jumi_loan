@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--星级数控件属性-->
+    <declare-styleable name="StarBarView">
+        <!--设置星星间的间隔-->
+        <attr name="space_width" format="dimension" />
+        <!--星星间宽度-->
+        <attr name="star_width" format="dimension" />
+        <!--星星间高度-->
+        <attr name="star_height" format="dimension" />
+        <!--最大数量-->
+        <attr name="star_max" format="integer" />
+        <!--选中数量-->
+        <attr name="star_rating" format="float" />
+        <!--未选中图片-->
+        <attr name="star_hollow" format="reference" />
+        <!--选中图片-->
+        <attr name="star_solid" format="reference" />
+        <!--是否可以滑动改变选中数量-->
+        <attr name="star_isIndicator" format="boolean" />
+        <!--排列方向-->
+        <attr name="star_orientation" format="enum">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <!--预加载界面-->
+    <declare-styleable name="LoadingLayout">
+        <attr name="isFirstVisible" format="boolean" />
+    </declare-styleable>
+
+    <!--********************  自定义TextView相关 Start  ****************************-->
+    <!--收缩展开的Textview-->
+    <declare-styleable name="TextViewExpandableAnimation">
+        <attr name="tvea_expandLines" format="integer" />
+        <attr name="tvea_shrinkBitmap" format="reference" />
+        <attr name="tvea_expandBitmap" format="reference" />
+        <attr name="tvea_textStateColor" format="color" />
+        <attr name="tvea_textContentColor" format="color" />
+        <attr name="tvea_textContentSize" format="dimension" />
+        <attr name="tvea_textShrink" format="string" />
+        <attr name="tvea_textExpand" format="string" />
+    </declare-styleable>
+
+    <!--实现数字增长效果的Textview-->
+    <declare-styleable name="NumberTextView">
+        <!--动画每次变化时间-->
+        <attr name="ntvChangeDuration" format="integer" />
+        <!--最小滚动间距-->
+        <attr name="ntvMinRollInt" format="integer" />
+        <!--是否使用最大动画时间间隔-->
+        <attr name="ntvUseMaxAnimDuration" format="boolean" />
+        <!--最大动画时间-->
+        <attr name="ntvMaxAnimDuration" format="integer" />
+        <!--每次滚动-->
+        <attr name="ntvRollInt" format="integer" />
+        <!--开始滚动的值-->
+        <attr name="ntvStartValue" format="string" />
+        <!--数字后面的单位-->
+        <attr name="ntvNumberValueUnit" format="string" />
+        <!--数字前面的符号-->
+        <attr name="ntvNumberSymbol" format="string" />
+    </declare-styleable>
+
+    <!--TextView字间距自定义-->
+    <declare-styleable name="LetterSpacingTextView">
+        <attr name="textSpacing" format="float" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+
+    <!--********************  自定义TextView相关 End  ****************************-->
+
+
+    <!--仿IOS实现SegmentControl  多个分割标签选择-->
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <!--选中segment的背景颜色-->
+        <attr name="scv_BackgroundSelectedColor" format="reference|color" />
+        <!--//未选中segment的背景颜色-->
+        <attr name="scv_BackgroundNormalColor" format="reference|color" />
+        <!--//选中segment的文字颜色-->
+        <attr name="scv_TextSelectedColor" format="reference|color" />
+        <!--//未选中segment的文字颜色-->
+        <attr name="scv_TextNormalColor" format="reference|color" />
+        <!--//segment边框的颜色-->
+        <attr name="scv_FrameColor" format="reference|color" />
+        <!--//segment边框的宽度-->
+        <attr name="scv_FrameWidth" format="reference|dimension" />
+        <!--//segment四个圆角的半径大小-->
+        <attr name="scv_FrameCornerRadius" format="reference|dimension" />
+        <!--//文字大小-->
+        <attr name="scv_TextSize" format="reference|dimension" />
+        <!--//string数组，每一个string都会填充到一个segment中-->
+        <attr name="scv_TextArray" format="reference" />
+        <!--//默认选中的segment-->
+        <attr name="scv_SelectedIndex" format="reference|integer" />
+        <!--//每一个segment内部的水平padding-->
+        <attr name="scv_SegmentPaddingHorizontal" format="reference|dimension" />
+        <!--每一个Segment的竖直方向的padding-->
+        <attr name="scv_SegmentPaddingVertical" format="reference|dimension" />
+        <!--//Segment改变时是否使用颜色渐变效果-->
+        <attr name="scv_Gradient" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- 下拉放大图片 -->
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+    <!-- 标题栏样式 -->
+    <!-- Base application theme. -->
+    <declare-styleable name="ToolBar">
+        <!-- 左按钮是否可见|背景 -->
+        <attr name="leftSrc" format="reference|color" />
+        <!-- 左文本内容 -->
+        <attr name="leftText" format="string" />
+        <attr name="leftColor" format="color" />
+        <attr name="leftSize" format="dimension" />
+        <!-- 标题文本内容 -->
+        <attr name="titleText" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <!-- 标题文本内容 -->
+        <attr name="subTitleColor" format="color" />
+        <attr name="subTitleSize" format="dimension" />
+        <!-- 右文本内容 -->
+        <attr name="rightColor" format="color" />
+        <attr name="rightSize" format="dimension" />
+        <!-- 背景 -->
+        <attr name="barBackground" format="reference|color" />
+        <!-- appbar高度 -->
+        <attr name="barHeight" format="dimension" />
+        <!-- divider 颜色 -->
+        <attr name="bottomDivider" format="color" />
+        <attr name="bottomDividerHeight" format="dimension" />
+    </declare-styleable>
+
+    <!-- 左右控件 -->
+    <declare-styleable name="LeftRightLayout">
+        <attr name="iconImg" format="reference" />
+        <attr name="iconFont" format="string" />
+        <attr name="iconFontColor" format="color" />
+        <attr name="iconFontSize" format="dimension" />
+        <attr name="leftTxt" format="string" />
+        <attr name="leftTxtColor" format="color" />
+        <attr name="leftTxtSize" format="dimension" />
+        <attr name="rightTxt" format="string" />
+        <attr name="rightTxtColor" format="color" />
+        <attr name="rightTxtSize" format="dimension" />
+        <attr name="leftRightEnabled" format="boolean" />
+        <attr name="enabledColor" format="color" />
+        <attr name="arrow" format="reference" />
+    </declare-styleable>
+
+    <!-- 虚线控件 -->
+    <declare-styleable name="DashedLine">
+        <attr name="dashedLineColor" format="color" />
+        <attr name="dashedLineOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 有说明的EditText控件 -->
+    <declare-styleable name="ExplainEditField">
+        <attr name="labelDuration" format="integer" />
+        <attr name="labelColor" format="color" />
+        <attr name="labelTxt" format="string" />
+    </declare-styleable>
+
+    <!-- 有清除按钮EditText控件 -->
+    <declare-styleable name="ClearEditText">
+        <attr name="isShow" format="boolean" />
+    </declare-styleable>
+
+    <!-- 自定义横向滚动控件 -->
+    <declare-styleable name="MyHorizontalScroll">
+        <attr name="scrollColumn" format="integer" />
+        <attr name="scrollPadding" format="dimension" />
+        <attr name="scrollTextColor" format="color" />
+        <attr name="scrollTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- SwitchButton -->
+    <declare-styleable name="SwitchButton">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+
+
+    <!--刷新列表属性-->
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0" />
+            <flag name="BallGridPulse" value="1" />
+            <flag name="BallClipRotate" value="2" />
+            <flag name="BallClipRotatePulse" value="3" />
+            <flag name="SquareSpin" value="4" />
+            <flag name="BallClipRotateMultiple" value="5" />
+            <flag name="BallPulseRise" value="6" />
+            <flag name="BallRotate" value="7" />
+            <flag name="CubeTransition" value="8" />
+            <flag name="BallZigZag" value="9" />
+            <flag name="BallZigZagDeflect" value="10" />
+            <flag name="BallTrianglePath" value="11" />
+            <flag name="BallScale" value="12" />
+            <flag name="LineScale" value="13" />
+            <flag name="LineScaleParty" value="14" />
+            <flag name="BallScaleMultiple" value="15" />
+            <flag name="BallPulseSync" value="16" />
+            <flag name="BallBeat" value="17" />
+            <flag name="LineScalePulseOut" value="18" />
+            <flag name="LineScalePulseOutRapid" value="19" />
+            <flag name="BallScaleRipple" value="20" />
+            <flag name="BallScaleRippleMultiple" value="21" />
+            <flag name="BallSpinFadeLoader" value="22" />
+            <flag name="LineSpinFadeLoader" value="23" />
+            <flag name="TriangleSkewSpin" value="24" />
+            <flag name="Pacman" value="25" />
+            <flag name="BallGridBeat" value="26" />
+            <flag name="SemiCircleSpin" value="27" />
+        </attr>
+        <attr name="indicator_color" format="color" />
+    </declare-styleable>
+    <!-- end -->
+
+</resources>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    tools:context="com.cashloan.jumidai.ui.homeRepay.RepayDeatilActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y90"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/x10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CoupleLayout"
+                android:text="@string/repay_details_state"
+                android:textSize="@dimen/text_size_h5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_detail_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20" />
+
+            <LinearLayout
+                style="@style/CoupleLayout"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_loan_money"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_real"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_realAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_fee"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_pass_fee"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_passFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_apply_limit"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_timeLimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_apply_date"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_applyTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repay_details_bank"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_bankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="@string/repay_details_repay_money"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_repayAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="@string/repay_details_repay_date"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_repayTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CoupleLayout"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="@string/repay_details_real_repay_money"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:text="@string/repay_details_real_repay_date"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_h3" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_repay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.commom.widget.NoDoubleClickButton
+            android:id="@+id/ndb_repay_extand"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y90"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/repay_details_to_loan"
+            android:visibility="gone"
+            android:textColor="@color/btn_normal"
+            android:textSize="@dimen/text_size_h3" />
+
+        <com.commom.widget.NoDoubleClickButton
+            android:id="@+id/ndb_repay_go"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y90"
+            android:layout_weight="1"
+            android:background="@color/btn_normal"
+            android:text="@string/repay_details_apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h3" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webpay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+

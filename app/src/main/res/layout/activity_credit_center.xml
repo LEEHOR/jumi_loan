@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_verify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.CreditCenterActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_background"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_background"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="必选认证"
+                android:visibility="gone"
+                android:textColor="@color/text_dark"
+                android:textSize="12sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_must_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="选填认证(信用提升)"
+                android:textColor="@color/text_light"
+                android:textSize="12sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_choose_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.PersonalInfoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x30"
+                android:paddingTop="@dimen/x10"
+                android:text="@string/credit_person_tips"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_h6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_card"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/x20">
+
+                        <ImageView
+                            android:id="@+id/iv_idCard_front"
+                            android:layout_width="@dimen/x110"
+                            android:layout_height="@dimen/x70"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_card_opposite" />
+
+                        <ImageView
+                            android:id="@+id/iv_idCard_back"
+                            android:layout_width="@dimen/x110"
+                            android:layout_height="@dimen/x70"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_card_positive" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_name"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <com.commom.widget.editText.ClearEditText
+                        android:id="@+id/cet_person_name"
+                        style="@style/EditText.Null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="@string/person_name_hint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_card_no"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <com.commom.widget.editText.ClearEditText
+                        android:id="@+id/cet_person_idCard"
+                        style="@style/EditText.Null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:enabled="false"
+                        android:hint="@string/person_card_no_hint"
+                        android:maxLength="18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_education"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_choose_education"
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="@string/person_education_hint"
+                        android:paddingLeft="@dimen/x20"
+                        android:textColorHint="@color/hint_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_address_now"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        android:id="@+id/tv_person_address"
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="@string/person_address_now_toast"
+                        android:paddingLeft="@dimen/x20"
+                        android:textColorHint="@color/hint_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_address_now"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3"
+                        android:visibility="invisible" />
+
+                    <com.commom.widget.editText.ClearEditText
+                        android:id="@+id/cet_person_addressDetail"
+                        style="@style/EditText.Null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="@string/person_address_now_hint"
+                        android:paddingLeft="@dimen/x20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout.LineLeft"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_marriage"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_weight="3"
+                        android:hint="@string/credit_no_must"
+                        android:textColorHint="@color/hint_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CoupleLayout"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/person_live_time"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <TextView
+                        style="@style/BasicTheme.TextView.Arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_weight="3"
+                        android:hint="@string/credit_no_must"
+                        android:textColorHint="@color/hint_grey" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

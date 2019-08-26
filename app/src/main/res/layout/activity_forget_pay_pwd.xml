@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.user.activity.ForgetPayPwdActivity">
+
+
+    <LinearLayout
+        style="@style/CoupleLayout.Line"
+        android:layout_marginTop="@dimen/y40"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_forgot_pay_phone"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h4" />
+
+        <TextView
+            android:id="@+id/tv_payPwd_phone"
+            style="@style/EditText.Null"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:padding="@dimen/x0" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/CoupleLayout.Line"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_forgot_pay_name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h4" />
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/cet_payPwd_name"
+            style="@style/EditText.Null"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:hint="@string/settings_forgot_pay_name_tip"
+            android:maxLength="11"
+            android:padding="@dimen/x0" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/CoupleLayout.Line"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_forgot_pay_no"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h4" />
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/cet_payPwd_idCardNo"
+            style="@style/EditText.Null"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:digits="0123456789Xx"
+            android:hint="@string/settings_forgot_pay_no_tip"
+            android:inputType="text"
+            android:maxLength="18"
+            android:padding="@dimen/x0" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/CoupleLayout"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_forgot_pay_code"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_payPwd_code"
+                style="@style/EditText.Null"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_weight="3"
+                android:hint="@string/settings_forgot_pay_code_tip"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/x0" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="@dimen/y40"
+                android:layout_gravity="center_vertical"
+                android:background="@color/divide_line" />
+
+            <com.commom.widget.TimeButton
+                android:id="@+id/tb_payPwd_code"
+                style="@style/timeButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/forgot_get_code_step_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.commom.widget.NoDoubleClickButton
+        android:id="@+id/ndb_payPwd_next"
+        style="@style/primary_button"
+        android:layout_marginTop="@dimen/y60"
+        android:text="@string/forgot_pwd_next_step_1" />
+
+</LinearLayout>

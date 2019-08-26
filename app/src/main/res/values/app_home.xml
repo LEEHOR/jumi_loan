@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主页 -->
+    <string name="home_apply">马上申请</string>
+    <string name="home_again_apply">继续申请</string>
+    <string name="home_repay_now">去还款</string>
+    <string name="home_to_repay">去还款</string>
+    <string name="home_loan_limit">信用额度(元)</string>
+    <string name="home_return_money">到账金额(元)</string>
+    <string name="home_service_fee">服务费用(元)</string>
+    <string name="home_success_apply">成功借款%1$s次</string>
+    <string name="gps_state">部分功能使用需要打开GPS,是否开启?</string>
+    <string name="home_auth">认证%1$s/%2$s</string>
+    <string name="home_to_extension">手头紧，去续借</string>
+
+
+    <string name="home_loan_money">借款金额(元)</string>
+    <string name="home_get_money">到账金额</string>
+    <string name="home_service_money">服务费用</string>
+    <string name="home_loan_time">借款期限</string>
+    <string name="home_loan_money_tip">借款金额</string>
+    <string name="home_loan_time_tip">借款天数</string>
+    <string name="home_credit_money">信用额度</string>
+    <string name="home_get">我知道了</string>
+    <!-- 借款 -->
+    <string name="loan_title">借款</string>
+    <string name="loan_money">借款金额</string>
+    <string name="loan_limit">借款期限</string>
+    <string name="loan_real">实际到账</string>
+    <string name="loan_fee">服务费用</string>
+    <string name="loan_return_money">到期应还</string>
+    <string name="loan_bank">收款银行</string>
+    <string name="loan_card">收款卡号</string>
+    <string name="loan_tip_1">你需要</string>
+    <string name="loan_tip_2">天后还款</string>
+    <string name="loan_address_error">正在定位中,请稍后</string>
+    <string name="loan_gps_state">借款需要打开GPS,是否开启?</string>
+    <string name="loan_apply">确认申请</string>
+    <string name="loan_deal">我已阅读并同意</string>
+</resources>

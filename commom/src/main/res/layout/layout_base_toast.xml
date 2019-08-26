@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:background="@drawable/shape_frame_toast"
+    android:gravity="center_horizontal"
+    android:minWidth="210dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="90dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_15"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_toast"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/size_15"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:shadowColor="#BB000000"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        tools:text="提示内容" />
+</RelativeLayout>

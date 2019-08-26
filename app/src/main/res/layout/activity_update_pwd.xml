@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.UpdatePwdActivity">
+
+
+    <TextView
+        android:id="@+id/tv_update_phone"
+        style="@style/CoupleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y80"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_h1" />
+
+    <LinearLayout style="@style/CoupleLayout.LineLeft">
+
+        <TextView
+            android:layout_width="@dimen/x0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/settings_pwd_pwd"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_h2" />
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/cet_old_pwd"
+            style="@style/EditText.Null"
+            android:layout_width="@dimen/x0"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:hint="@string/settings_pwd_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/x0"
+            android:paddingTop="@dimen/x0"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h2" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/CoupleLayout.LineLeft">
+
+        <TextView
+            android:layout_width="@dimen/x0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/settings_pwd_new_pwd"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_h2" />
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/cet_new_pwd"
+            style="@style/EditText.Null"
+            android:layout_width="@dimen/x0"
+            android:layout_weight="3"
+            android:hint="@string/settings_pwd_new_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/x0"
+            android:paddingTop="@dimen/x0"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h2" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/CoupleLayout"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="@dimen/x0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/settings_pwd_confirm_pwd"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_h2" />
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/cet_confirm_newPwd"
+            style="@style/EditText.Null"
+            android:layout_width="@dimen/x0"
+            android:layout_weight="3"
+            android:hint="@string/settings_pwd_confirm_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/x0"
+            android:paddingTop="@dimen/x0"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_h2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/settings_pwd_desc"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/text_size_h5" />
+
+    <com.commom.widget.NoDoubleClickTextView
+        android:id="@+id/ndt_submit"
+        style="@style/primary_button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/settings_pwd_sub" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 还款 -->
+    <string name="loan_find_pwd">找回密码</string>
+    <string name="loan_pwd_error">密码错误,请重新输入</string>
+    <string name="loan_success">申请成功</string>
+    <!-- 还款列表 -->
+    <string name="repay_list_time">还款时间</string>
+    <string name="repay_list_money">到账金额(元)</string>
+    <string name="repay_list_fee">服务费用(元)</string>
+    <string name="repay_list_pass_fee">逾期费用(元)</string>
+    <string name="repay_list_unit">¥ %1$s</string>
+
+    <!-- 还款 -->
+    <string name="repay_no_record">您还没有还款记录哦~</string>
+    <string name="repay_record_no">全部待还 %1$s 笔</string>
+    <string name="repay_apply">马上申请</string>
+    <string name="repay_type">支持多种还款方式，方便快捷</string>
+    <string name="repay_active">银行卡转账</string>
+    <string name="repay_self_motion">自动还款</string>
+    <string name="repay_zfb">支付宝转账</string>
+
+    <!-- 还款详情 -->
+    <string name="repay_details_title">还款详情</string>
+    <string name="loan_details_title">借款详情</string>
+    <string name="repay_details_state">申请进度</string>
+
+    <string name="repay_details_loan_money">借款金额</string>
+    <string name="repay_details_current">打款中</string>
+    <string name="repay_details_pass">审核通过</string>
+    <string name="repay_details_success">申请提交成功</string>
+    <string name="repay_details_real">实际到账</string>
+    <string name="repay_details_fee">服务费</string>
+    <string name="repay_details_pass_fee">逾期费用</string>
+    <string name="repay_details_apply_limit">借款期限</string>
+    <string name="repay_details_apply_date">申请日期</string>
+    <string name="repay_details_bank">收款银行</string>
+    <string name="repay_details_repay_money">预计还款金额</string>
+    <string name="repay_details_repay_date">预计还款日期</string>
+    <string name="repay_details_real_repay_money">实际还款金额</string>
+    <string name="repay_details_real_repay_date">实际还款日期</string>
+    <string name="repay_details_apply">去还款</string>
+    <string name="repay_details_to_loan">去续借</string>
+    <!-- 还款 -->
+    <string name="repay_type_title">还款方式</string>
+    <string name="repay_type_select">请选择还款方式</string>
+    <string name="repay_type_type_1">银行卡转账</string>
+    <string name="repay_type_type_2">自动还款</string>
+    <string name="repay_type_type_3">支付宝转账</string>
+    <string name="repay_type_tip">备注\n若在借款期间内未主动发起借款，则默认于还款日当天从绑定银行卡内自动扣除所借款项，请保证在扣款之前账号内资金充足。\n主动还款请备注个人信息（姓名+注册手机号）</string>
+    <string name="repay_auto_tip">到期自动还款</string>
+    <string name="repay_auto_content">平台会在还款日自动从绑定的银行卡中扣除借款金额，扣除成功后会向您发送短信提醒。</string>
+    <!-- 还款确认 -->
+    <string name="repay_enter_title_1">个人转账还款</string>
+    <string name="repay_enter_title_2">支付宝还款</string>
+    <string name="repay_enter_format">备注格式</string>
+    <string name="repay_enter_phone">您的姓名+手机号</string>
+    <string name="repay_enter_sign">标明备注</string>
+    <string name="repay_enter_tip_1">请将还款金额转至以下银行账户中并</string>
+    <string name="repay_enter_tip_2">请将还款金额转至以下支付宝账户中并</string>
+    <string name="repay_enter_tips">备注 您的姓名+注册手机号</string>
+    <string name="repay_enter_copy">点击复制账号</string>
+    <string name="repay_enter_user">收款人</string>
+    <string name="repay_enter_bank">收款行</string>
+    <string name="repay_enter_card">收款卡号</string>
+    <string name="repay_enter_bank_account">银行账户</string>
+    <string name="repay_enter_zfb">支付宝账户</string>
+</resources>

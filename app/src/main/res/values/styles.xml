@@ -1,0 +1,205 @@
+<resources>
+
+    <style name="TextEditInput" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/base_hint_text_color</item>
+    </style>
+
+
+    <style name="CostDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.UpdateBox" parent="AppTheme">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--背景变暗-->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_color_principal</item>
+        <item name="colorPrimaryDark">@color/app_color_principal</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 分割线样式 -->
+        <item name="android:listDivider">@drawable/divider_list</item>
+        <item name="android:dividerHorizontal">@drawable/divider_horizontal</item>
+        <item name="android:dividerVertical">@drawable/divider_vertical</item>
+    </style>
+    <!-- 我的账户Item的样式 -->
+    <style name="AccountItemStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/x30</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/x40</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/x30</item>
+    </style>
+    <!-- 圆弧状背景 Style -->
+    <style name="BasicTheme.RectangleLayout" parent="@style/BasicTheme.Layout">
+        <item name="android:background">@drawable/stroke_fillet_transparent_grey</item>
+        <item name="android:paddingLeft">@dimen/x0</item>
+        <item name="android:paddingRight">@dimen/x0</item>
+        <item name="android:layout_marginLeft">@dimen/x30</item>
+        <item name="android:layout_marginRight">@dimen/x30</item>
+    </style>
+
+    <!-- 空白背景输入框 -->
+    <style name="EditText.Null" parent="@style/BasicTheme.EditText.Padding">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 主色调按钮 Style -->
+    <style name="primary_button">
+        <item name="android:background">@drawable/primary_button_selector</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/x20</item>
+        <item name="android:layout_marginBottom">@dimen/x20</item>
+        <item name="android:layout_marginLeft">@dimen/x30</item>
+        <item name="android:layout_marginRight">@dimen/x30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/x10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <!-- 主色调按钮 Style -->
+    <style name="primary_button_new" parent="@style/primary_button">
+        <item name="android:background">@drawable/primary_button_selector_new</item>
+        <item name="android:textColor">@color/btn_normal</item>
+    </style>
+
+    <!-- 圆角按钮的样式 -->
+    <style name="FilletRedBtnStyle">
+        <item name="android:background">@drawable/solid_fillet_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y100</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TxtRedBtnStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/x150</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/x5</item>
+        <item name="android:paddingTop">@dimen/x5</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+    </style>
+
+    <style name="TxtRectStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/x15</item>
+        <item name="android:paddingTop">@dimen/x15</item>
+        <item name="android:paddingLeft">@dimen/x10</item>
+        <item name="android:paddingRight">@dimen/x10</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+        <item name="android:background">@drawable/autosetup_tx_bg</item>
+        <item name="android:textColor">@drawable/autosetup_txtcolor</item>
+    </style>
+
+    <!-- 左右文字 -->
+    <style name="CoupleLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/x20</item>
+        <item name="android:paddingBottom">@dimen/x20</item>
+        <item name="android:paddingLeft">@dimen/x30</item>
+        <item name="android:paddingRight">@dimen/x30</item>
+    </style>
+
+    <!-- 左右文字 - 带下划线 -->
+    <style name="CoupleLayout.Line" parent="CoupleLayout">
+        <item name="android:background">@drawable/underline</item>
+    </style>
+
+    <!-- 左右文字 - 带左间距下划线 -->
+    <style name="CoupleLayout.LineLeft" parent="CoupleLayout">
+        <item name="android:background">@drawable/underline_left</item>
+    </style>
+
+    <!-- 左右文字 - 带左右间距下划线 -->
+    <style name="CoupleLayout.LineBoth" parent="CoupleLayout">
+        <item name="android:background">@drawable/underline_both</item>
+    </style>
+
+    <!-- 左右文字 padding值不一样 -->
+    <style name="CoupleLayout.Top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/x20</item>
+        <item name="android:paddingBottom">@dimen/x20</item>
+        <item name="android:paddingLeft">@dimen/x0</item>
+        <item name="android:paddingRight">@dimen/x0</item>
+    </style>
+
+    <!-- 左右文字 padding值不一样 -->
+    <style name="CoupleLayout.Other">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/x0</item>
+        <item name="android:paddingBottom">@dimen/x20</item>
+        <item name="android:paddingLeft">@dimen/x0</item>
+        <item name="android:paddingRight">@dimen/x0</item>
+    </style>
+
+    <!-- 自定义dialog的样式 -->
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="timeButtonStyle">
+        <item name="android:textSize">@dimen/text_size_h6</item>
+        <item name="android:textColor">@color/app_color_principal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/x20</item>
+    </style>
+
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!-- 认证按钮样式 -->
+    <style name="tvVerifyBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@drawable/color_tv_verify_status</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_tv_mine_verify</item>
+
+
+    </style>
+
+</resources>

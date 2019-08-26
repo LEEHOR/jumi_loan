@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.user.activity.ForgetPwdActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_forget_step1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/CoupleLayout.Line"
+            android:layout_marginTop="@dimen/y40"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/forgot_phone_step_1"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/phone_edit"
+                style="@style/EditText.Null"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:enabled="false"
+                android:hint="@string/forgot_phone_hint_step_1"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="@dimen/x0" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CoupleLayout"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/forgot_pwd_code_step_1"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <com.commom.widget.editText.ClearEditText
+                    android:id="@+id/cet_forget_code"
+                    style="@style/EditText.Null"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_weight="3"
+                    android:hint="@string/forgot_pwd_code_hint_step_1"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/x0">
+
+                    <requestFocus />
+                </com.commom.widget.editText.ClearEditText>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/y40"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/divide_line" />
+
+                <com.commom.widget.TimeButton
+                    android:id="@+id/timeButton"
+                    style="@style/timeButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/forgot_get_code_step_1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.commom.widget.NoDoubleClickButton
+            android:id="@+id/noDoubleClickButton"
+            style="@style/primary_button"
+            android:layout_marginTop="@dimen/y60"
+            android:text="@string/forgot_pwd_next_step_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forget_step2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/CoupleLayout.Line"
+            android:layout_marginTop="@dimen/y40">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/forgot_pwd_new_step_2"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_forget_new"
+                style="@style/EditText.Null"
+                android:layout_width="@dimen/x0"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_weight="3"
+                android:hint="@string/forgot_pwd_new_hint_step_2"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="@dimen/x0" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CoupleLayout"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/forgot_pwd_confirm_step_2"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_forget_new_confirm"
+                style="@style/EditText.Null"
+                android:layout_width="@dimen/x0"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_weight="3"
+                android:hint="@string/forgot_pwd_confirm_hint_step_2"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="@dimen/x0" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x20"
+            android:text="@string/forgot_pwd_tips"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_h5" />
+
+        <com.commom.widget.NoDoubleClickButton
+            android:id="@+id/ndb_forget_submit"
+            style="@style/primary_button"
+            android:layout_marginTop="@dimen/y60"
+            android:text="@string/forgot_pwd_confirm_update_step_2" />
+    </LinearLayout>
+
+
+</LinearLayout>

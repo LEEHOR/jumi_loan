@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App bar颜色 -->
+    <color name="colorPrimary">#dc002a</color>
+    <!-- 状态栏颜色(Lollipop - API Level 21 以上) -->
+    <color name="colorPrimaryDark">#dc002a</color>
+    <!-- 控件的主色调(光标颜色、checkbox背景色等) -->
+    <color name="colorAccent">#FF5256</color>
+    <!-- 灰色背景色 -->
+    <color name="colorGrey">#F5F5F5</color>
+    <!-- 标题栏目 -->
+    <color name="colorTitleBar">#FFFFFF</color>
+    <!-- 底部导航栏 -->
+    <color name="colorTabBar">#F7F7F7</color>
+    <!-- 透明灰色背景 -->
+    <color name="transparentGrey">#A0000000</color>
+
+    <!-- 字体颜色 -->
+    <!-- 重点文字-->
+    <color name="text_dark">#333333</color>
+    <!-- 次级文字（输入状态文字）-->
+    <color name="text_black">#333333</color>
+    <color name="text_light">#666666</color>
+    <!--提示文字-->
+    <color name="text_grey">#999999</color>
+
+    <color name="text_silver">#CCCCCC</color>
+    <color name="text_blue">#3BB0FF</color>
+    <color name="text_red">#F95A28</color>
+    <color name="text_green">#30DBA6</color>
+    <color name="text_orange">#FF7D00</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- EditText-hint-灰色 -->
+    <color name="hint_grey">#CCCCCC</color>
+
+    <!-- 灰色线 -->
+    <color name="line_black">#999999</color>
+    <color name="line_grey">#f3f4f8</color>
+
+    <!-- item选中背景色 -->
+    <color name="item_select_bg">#CCFFFF</color>
+
+    <!-- button-enable -->
+    <color name="enable_bg">#F95A28</color>
+    <!-- button-disable -->
+    <color name="disable_bg">#CCCCCC</color>
+    <!-- button-pressed -->
+    <color name="press_bg">#EA4612</color>
+
+    <!-- 占位图文字颜色 -->
+    <color name="placeholder_text_color">#666666</color>
+
+
+    <!-- 基本色值 -->
+    <color name="grey">#aaaaaa</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey_press">#a0aaaaaa</color>
+    <color name="black_press">#a0000000</color>
+    <color name="white_press">#a0ffffff</color>
+
+    <!-- 透明半透明色值 -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#66000000</color>
+    <color name="transparent_half_white">#66ffffff</color>
+
+    <!--app整体基调色-->
+    <color name="base_loading_background">#60000000</color>
+    <color name="base_color">#dc002a</color>
+    <color name="base_color_press">#dc002a</color>
+
+    <color name="base_statusBar">@color/base_color</color>
+    <color name="base_title_text">@color/base_color</color>
+
+
+    <!--页面背景颜色-->
+    <color name="base_background">#f2f2f2</color>
+    <color name="base_background_press">#99a1b3</color>
+
+    <!--页面显示的文字颜色-->
+    <color name="base_show_text_color">#333333</color>
+    <color name="base_light_text_color">#666666</color>
+    <color name="base_hint_text_color">#999999</color>
+
+    <!--通用按钮颜色-->
+    <color name="base_btn">#f49001</color>
+    <color name="base_btn_press">#f49001</color>
+
+    <color name="dialog_btn_press">#d3d3d3</color>
+
+    <!--水平分割线颜色-->
+    <color name="base_horizontal_line">#E6E6E6</color>
+    <!--垂直分割线-->
+    <color name="base_vertical_line">#E6E6E6</color>
+
+
+    <!--常见几个黑色值-->
+    <color name="c_333333">#333333</color>
+    <color name="c_666666">#666666</color>
+    <color name="c_999999">#999999</color>
+
+
+    <color name="color_gray_light_content_text">#999999</color>
+
+</resources>

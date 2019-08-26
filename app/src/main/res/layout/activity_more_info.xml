@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.MoreInfoActivity">
+
+
+    <TextView
+        style="@style/CoupleLayout"
+        android:text="@string/credit_more_tips"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_h5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/CoupleLayout.Line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="@string/credit_more_tb"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_taobao"
+                style="@style/EditText.Null"
+                android:background="@null"
+                android:hint="@string/credit_more_tb_hint"
+                android:inputType="text"
+                android:maxLength="20"
+                android:textSize="@dimen/text_size_h3" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CoupleLayout.Line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="@string/credit_more_mail"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_email"
+                style="@style/EditText.Null"
+                android:background="@null"
+                android:hint="@string/credit_more_mail_hint"
+                android:inputType="text"
+                android:maxLength="20"
+                android:textSize="@dimen/text_size_h3" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CoupleLayout.Line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="@string/credit_more_qq"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_qq"
+                style="@style/EditText.Null"
+                android:background="@null"
+                android:hint="@string/credit_more_qq_hint"
+                android:inputType="number"
+                android:maxLength="16"
+                android:textSize="@dimen/text_size_h3" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CoupleLayout.Line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="@string/credit_more_wx"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_h4" />
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/cet_wechat"
+                style="@style/EditText.Null"
+                android:background="@null"
+                android:hint="@string/credit_more_wx_hint"
+                android:inputType="text"
+                android:maxLength="20"
+                android:textSize="@dimen/text_size_h3" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.commom.widget.NoDoubleClickTextView
+        android:id="@+id/ndb_more"
+        style="@style/primary_button"
+        android:layout_marginTop="@dimen/x50"
+        android:text="@string/save"
+        android:visibility="gone" />
+
+
+</LinearLayout>

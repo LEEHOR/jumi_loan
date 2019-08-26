@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.BindedCardActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/CoupleLayout.LineLeft"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_belong"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h3" />
+
+            <TextView
+                android:id="@+id/tv_bind_bankName"
+                style="@style/EditText.Null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="建设银行" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CoupleLayout"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_bank_card"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h3" />
+
+            <TextView
+                android:id="@+id/tv_bind_cardNumber"
+                style="@style/EditText.Null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/x20"
+                android:textColorHint="@color/hint_grey"
+                tools:text="6873 7764 3425 6534" />
+
+            <TextView
+                android:id="@+id/tv_getBindCode"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:background="@drawable/selector_btn_test_card"
+                android:gravity="center"
+                android:text="验证"
+                android:textColor="@drawable/color_tv_test_card"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bindTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="16dp"
+            android:textColor="#fffda964"
+            android:textSize="12sp"
+            tools:text="123" />
+
+        <LinearLayout
+            android:id="@+id/ll_bind_phone"
+            style="@style/CoupleLayout"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bank_bank_phone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_h3" />
+
+            <TextView
+                android:id="@+id/tv_bind_phoneNum"
+                style="@style/EditText.Null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@{StringFormat.phoneHideFormat(viewCtrl.viewModel.phone)}"
+                tools:text="13287599632" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:text="@string/remark"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/text_size_h5"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_bind_reminds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x5"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/text_size_h5" />
+
+    <com.commom.widget.NoDoubleClickButton
+        android:id="@+id/ndb_bind_card"
+        style="@style/primary_button"
+        android:layout_marginTop="@dimen/y40"
+        android:text="@string/bank_bind_again" />
+
+</LinearLayout>

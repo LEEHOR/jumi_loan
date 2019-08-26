@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.WorkInfoImageActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_show_workImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_workImage_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_workImage_tips"
+            style="@style/BasicTheme.TextView"
+            android:background="@color/backgroundColor"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:text="@string/work_photo_tips" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.commom.widget.recycler.xRecycler.XRecyclerView
+                android:id="@+id/rc_work_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_weight="1"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/tv_workImage_tips2"
+                style="@style/CoupleLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y0"
+                android:text="@string/work_photo_tips2"
+                android:textColor="@color/text_grey" />
+
+            <com.commom.widget.NoDoubleClickButton
+                android:id="@+id/ndb_upload_images"
+                style="@style/primary_button"
+                android:text="@string/work_photo_upload" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.user.activity.RegisterActivity">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:padding="4dp"
+            android:src="@drawable/icon_login_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="35dp"
+        android:textColor="#4c516a"
+        android:textSize="28sp"
+        tools:text="您好，153****9680" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="35dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:hintTextAppearance="@style/TextEditInput">
+
+            <com.commom.widget.editText.ClearEditText
+                android:id="@+id/code"
+                style="@style/EditText.Null"
+                android:hint="@string/register_code_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="0dp"
+                android:textSize="17sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.commom.widget.TimeButton
+            android:id="@+id/timeButton"
+            style="@style/timeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/register_get_code" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/base_horizontal_line" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:hintTextAppearance="@style/TextEditInput">
+
+        <com.commom.widget.editText.ClearEditText
+            android:id="@+id/newPwd"
+            style="@style/EditText.Null"
+            android:hint="@string/register_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="0dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/base_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/y40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_selector"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/BasicTheme.Tips"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginStart="@dimen/x20"
+            android:background="@color/transparent"
+            android:text="@string/register_tip1" />
+
+        <LinearLayout
+            android:id="@+id/protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register_agreement"
+            style="@style/BasicTheme.Tips"
+            android:background="@color/transparent"
+            android:text="@string/register_tip2"
+            android:textColor="@color/text_blue"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <com.commom.widget.NoDoubleClickButton
+        android:id="@+id/ndb_register"
+        style="@style/primary_button"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/register_title" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_item_record"
+    android:background="@drawable/selector_write_item"
+    android:paddingBottom="@dimen/x15"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    android:paddingTop="@dimen/x15">
+
+
+    <TextView
+        android:id="@+id/tv_transaction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_h2"
+        tools:text="借款1000.00" />
+
+    <TextView
+        android:id="@+id/tv_transaction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_transaction_title"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/text_grey"
+        tools:text="2018-08-08 15:34:54" />
+
+    <TextView
+        android:id="@+id/tv_transaction_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        tools:text="待还款" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_arrow_right" />
+
+</RelativeLayout>
+

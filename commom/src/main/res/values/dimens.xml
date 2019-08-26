@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题按钮左内边距-->
+    <dimen name="title_padding_left">12dp</dimen>
+    <!--标题按钮右内边距-->
+    <dimen name="title_padding_right">12dp</dimen>
+    <!--左标题按钮最小宽度-->
+    <dimen name="title_min_width_left">60dp</dimen>
+    <!--右标题按钮最小宽度-->
+    <dimen name="title_min_width_right">60dp</dimen>
+    <!--标题高度-->
+    <dimen name="title_bar_height">45dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="default_text_size">@dimen/text_size_14</dimen>
+    <dimen name="title_text_size">@dimen/text_size_18</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+
+    <dimen name="text_size_h1">18sp</dimen>
+    <dimen name="text_size_h2">16sp</dimen>
+    <dimen name="text_size_h3">15sp</dimen>
+    <dimen name="text_size_h4">14sp</dimen>
+    <dimen name="text_size_h5">13sp</dimen>
+    <dimen name="text_size_h6">12sp</dimen>
+    <dimen name="text_size_h7">11sp</dimen>
+
+
+    <dimen name="default_margin">12dp</dimen>
+    <dimen name="default_padding">12dp</dimen>
+
+    <!--布局控件大小或边距 size  m 表示负数-->
+    <dimen name="size_m1">-1dp</dimen>
+    <dimen name="size_m2">-2dp</dimen>
+    <dimen name="size_m3">-3dp</dimen>
+    <dimen name="size_m4">-4dp</dimen>
+    <dimen name="size_m5">-5dp</dimen>
+    <!-- row 1-10 -->
+    <dimen name="size_0_5">0.5dp</dimen>
+    <dimen name="size_1">@dimen/x1</dimen>
+    <dimen name="size_2">@dimen/x2</dimen>
+    <dimen name="size_3">@dimen/x3</dimen>
+    <dimen name="size_4">@dimen/x4</dimen>
+    <dimen name="size_5">@dimen/x5</dimen>
+    <dimen name="size_6">@dimen/x6</dimen>
+    <dimen name="size_7">@dimen/x7</dimen>
+    <dimen name="size_8">@dimen/x8</dimen>
+    <dimen name="size_9">@dimen/x9</dimen>
+    <dimen name="size_10">@dimen/x10</dimen>
+    <!-- row 11-20 -->
+    <dimen name="size_11">@dimen/x11</dimen>
+    <dimen name="size_12">@dimen/x12</dimen>
+    <dimen name="size_13">@dimen/x13</dimen>
+    <dimen name="size_14">@dimen/x14</dimen>
+    <dimen name="size_15">@dimen/x15</dimen>
+    <dimen name="size_16">@dimen/x16</dimen>
+    <dimen name="size_17">@dimen/x17</dimen>
+    <dimen name="size_18">@dimen/x16</dimen>
+    <dimen name="size_19">@dimen/x19</dimen>
+    <dimen name="size_20">@dimen/x20</dimen>
+    <!-- row 21-30 -->
+    <dimen name="size_21">@dimen/x21</dimen>
+    <dimen name="size_22">@dimen/x22</dimen>
+    <dimen name="size_23">@dimen/x23</dimen>
+    <dimen name="size_24">@dimen/x24</dimen>
+    <dimen name="size_25">@dimen/x25</dimen>
+    <dimen name="size_26">@dimen/x26</dimen>
+    <dimen name="size_27">@dimen/x27</dimen>
+    <dimen name="size_28">@dimen/x28</dimen>
+    <dimen name="size_29">@dimen/x29</dimen>
+    <dimen name="size_30">@dimen/x30</dimen>
+    <!-- row 31-40 -->
+    <dimen name="size_31">@dimen/x31</dimen>
+    <dimen name="size_32">@dimen/x32</dimen>
+    <dimen name="size_33">@dimen/x33</dimen>
+    <dimen name="size_34">@dimen/x34</dimen>
+    <dimen name="size_35">@dimen/x35</dimen>
+    <dimen name="size_36">@dimen/x36</dimen>
+    <dimen name="size_37">@dimen/x37</dimen>
+    <dimen name="size_38">@dimen/x38</dimen>
+    <dimen name="size_39">@dimen/x39</dimen>
+    <dimen name="size_40">@dimen/x40</dimen>
+    <!-- row 41-50 -->
+    <dimen name="size_41">@dimen/x41</dimen>
+    <dimen name="size_42">@dimen/x42</dimen>
+    <dimen name="size_43">@dimen/x43</dimen>
+    <dimen name="size_44">@dimen/x44</dimen>
+    <dimen name="size_45">@dimen/x45</dimen>
+    <dimen name="size_46">@dimen/x46</dimen>
+    <dimen name="size_47">@dimen/x47</dimen>
+    <dimen name="size_48">@dimen/x48</dimen>
+    <dimen name="size_49">@dimen/x49</dimen>
+    <dimen name="size_50">@dimen/x50</dimen>
+    <!-- row 51-60 -->
+    <dimen name="size_51">@dimen/x51</dimen>
+    <dimen name="size_52">@dimen/x52</dimen>
+    <dimen name="size_53">@dimen/x53</dimen>
+    <dimen name="size_54">@dimen/x54</dimen>
+    <dimen name="size_55">@dimen/x55</dimen>
+    <dimen name="size_56">@dimen/x56</dimen>
+    <dimen name="size_57">@dimen/x57</dimen>
+    <dimen name="size_58">@dimen/x58</dimen>
+    <dimen name="size_59">@dimen/x59</dimen>
+    <dimen name="size_60">@dimen/x60</dimen>
+    <!-- row 61-70 -->
+    <dimen name="size_61">@dimen/x61</dimen>
+    <dimen name="size_62">@dimen/x62</dimen>
+    <dimen name="size_63">@dimen/x63</dimen>
+    <dimen name="size_64">@dimen/x64</dimen>
+    <dimen name="size_65">@dimen/x65</dimen>
+    <dimen name="size_66">@dimen/x66</dimen>
+    <dimen name="size_67">@dimen/x67</dimen>
+    <dimen name="size_68">@dimen/x68</dimen>
+    <dimen name="size_69">@dimen/x69</dimen>
+    <dimen name="size_70">@dimen/x70</dimen>
+    <!-- row 71-80 -->
+    <dimen name="size_71">@dimen/x71</dimen>
+    <dimen name="size_72">@dimen/x72</dimen>
+    <dimen name="size_73">@dimen/x73</dimen>
+    <dimen name="size_74">@dimen/x74</dimen>
+    <dimen name="size_75">@dimen/x75</dimen>
+    <dimen name="size_76">@dimen/x76</dimen>
+    <dimen name="size_77">@dimen/x77</dimen>
+    <dimen name="size_78">@dimen/x78</dimen>
+    <dimen name="size_79">@dimen/x79</dimen>
+    <dimen name="size_80">@dimen/x80</dimen>
+    <!-- row 81-90 -->
+    <dimen name="size_81">@dimen/x81</dimen>
+    <dimen name="size_82">@dimen/x82</dimen>
+    <dimen name="size_83">@dimen/x83</dimen>
+    <dimen name="size_84">@dimen/x84</dimen>
+    <dimen name="size_85">@dimen/x85</dimen>
+    <dimen name="size_86">@dimen/x86</dimen>
+    <dimen name="size_87">@dimen/x87</dimen>
+    <dimen name="size_88">@dimen/x88</dimen>
+    <dimen name="size_89">@dimen/x89</dimen>
+    <dimen name="size_90">@dimen/x90</dimen>
+    <!-- row 91-100 -->
+    <dimen name="size_91">@dimen/x91</dimen>
+    <dimen name="size_92">@dimen/x92</dimen>
+    <dimen name="size_93">@dimen/x93</dimen>
+    <dimen name="size_94">@dimen/x94</dimen>
+    <dimen name="size_95">@dimen/x95</dimen>
+    <dimen name="size_96">@dimen/x96</dimen>
+    <dimen name="size_97">@dimen/x97</dimen>
+    <dimen name="size_98">@dimen/x98</dimen>
+    <dimen name="size_99">@dimen/x99</dimen>
+    <dimen name="size_100">@dimen/x100</dimen>
+    <!-- row 101-110 -->
+    <dimen name="size_101">@dimen/x101</dimen>
+    <dimen name="size_102">@dimen/x102</dimen>
+    <dimen name="size_103">@dimen/x103</dimen>
+    <dimen name="size_104">@dimen/x104</dimen>
+    <dimen name="size_105">@dimen/x105</dimen>
+    <dimen name="size_106">@dimen/x106</dimen>
+    <dimen name="size_107">@dimen/x107</dimen>
+    <dimen name="size_108">@dimen/x108</dimen>
+    <dimen name="size_109">@dimen/x109</dimen>
+    <dimen name="size_110">@dimen/x100</dimen>
+    <!-- row 111-120 -->
+    <dimen name="size_111">@dimen/x111</dimen>
+    <dimen name="size_112">@dimen/x112</dimen>
+    <dimen name="size_113">@dimen/x113</dimen>
+    <dimen name="size_114">@dimen/x114</dimen>
+    <dimen name="size_115">@dimen/x115</dimen>
+    <dimen name="size_116">@dimen/x116</dimen>
+    <dimen name="size_117">@dimen/x117</dimen>
+    <dimen name="size_118">@dimen/x118</dimen>
+    <dimen name="size_119">@dimen/x119</dimen>
+    <dimen name="size_120">@dimen/x120</dimen>
+    <!-- row 121-130 -->
+    <dimen name="size_121">@dimen/x121</dimen>
+    <dimen name="size_122">@dimen/x122</dimen>
+    <dimen name="size_123">@dimen/x123</dimen>
+    <dimen name="size_124">@dimen/x124</dimen>
+    <dimen name="size_125">@dimen/x125</dimen>
+    <dimen name="size_126">@dimen/x126</dimen>
+    <dimen name="size_127">@dimen/x127</dimen>
+    <dimen name="size_128">@dimen/x128</dimen>
+    <dimen name="size_129">@dimen/x129</dimen>
+    <dimen name="size_130">@dimen/x130</dimen>
+    <!-- row 131-140 -->
+    <dimen name="size_131">@dimen/x131</dimen>
+    <dimen name="size_132">@dimen/x132</dimen>
+    <dimen name="size_133">@dimen/x133</dimen>
+    <dimen name="size_134">@dimen/x134</dimen>
+    <dimen name="size_135">@dimen/x135</dimen>
+    <dimen name="size_136">@dimen/x136</dimen>
+    <dimen name="size_137">@dimen/x137</dimen>
+    <dimen name="size_138">@dimen/x138</dimen>
+    <dimen name="size_139">@dimen/x139</dimen>
+    <dimen name="size_140">@dimen/x140</dimen>
+    <!-- row 141-150 -->
+    <dimen name="size_141">@dimen/x141</dimen>
+    <dimen name="size_142">@dimen/x142</dimen>
+    <dimen name="size_143">@dimen/x143</dimen>
+    <dimen name="size_144">@dimen/x144</dimen>
+    <dimen name="size_145">@dimen/x145</dimen>
+    <dimen name="size_146">@dimen/x146</dimen>
+    <dimen name="size_147">@dimen/x147</dimen>
+    <dimen name="size_148">@dimen/x148</dimen>
+    <dimen name="size_149">@dimen/x149</dimen>
+    <dimen name="size_150">@dimen/x150</dimen>
+
+
+    <dimen name="size_180">@dimen/x180</dimen>
+    <dimen name="size_270">@dimen/x270</dimen>
+
+</resources>

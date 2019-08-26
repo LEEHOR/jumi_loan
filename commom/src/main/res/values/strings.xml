@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Commom</string>
+
+    <!-- 一些通用的文本 -->
+    <string name="common_tips">提示</string>
+
+    <string name="common_sure">确定</string>
+    <string name="common_save">保存</string>
+    <string name="common_submit">提交</string>
+    <string name="common_confirm">确认</string>
+
+    <string name="common_back">返回</string>
+    <string name="common_close">关闭</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_next">下一步</string>
+    <string name="common_complete">完成</string>
+
+
+    <string name="shrink">收起</string>
+    <string name="expand">展开</string>
+
+    <string name="app_crash">很抱歉，程序出现异常，即将退出。</string>
+    <string name="app_exit">再按一次退出程序</string>
+    <string name="popup_pick">拍照</string>
+    <string name="popup_take">从手机相册选择</string>
+    <string name="popup_delete">删除</string>
+    <string name="popup_cancel">取消</string>
+    <string name="dialog_file_too_big">文件过大</string>
+    <string name="version_unknown">未知版本</string>
+
+    <string name="permission_message_permission_failed">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+
+
+    <string name="pull_down_text">下拉刷新</string>
+    <string name="pull_down_release_text">释放刷新</string>
+    <string name="pull_down_loading_text">正在刷新</string>
+    <string name="pull_up_text">加载中...</string>
+
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">松开立即刷新</string>
+    <string name="listview_loading">正在加载</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+
+</resources>

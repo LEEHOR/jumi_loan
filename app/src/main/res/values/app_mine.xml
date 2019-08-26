@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="credit_center_title">认证中心</string>
+    <string name="credit_no_dic">尚未获取该数据字典，请退出应用后重启再尝试填写！</string>
+    <string name="credit_no_quanxian">授权错误，请联系管理员！</string>
+    <string name="credit_must_title">必选认证</string>
+    <string name="credit_not_must_title">可选认证</string>
+    <string-array name="credit_type">
+        <item>个人信息</item>
+        <item>收款银行卡</item>
+        <item>紧急联系人</item>
+        <item>手机运营商</item>
+
+        <!--<item>芝麻授信</item>-->
+        <item>身份识别</item>
+        <item>社保</item>
+        <item>公积金</item>
+        <item>工作信息</item>
+        <item>支付宝认证</item>
+        <item>更多信息</item>
+    </string-array>
+    <string-array name="credit_type_tip">
+        <item>请完善个人信息</item>
+        <item>我们将借款打到此银行卡</item>
+        <item>手机运营商认证有助于加快审批</item>
+        <item>特殊情况，可以帮我们联系到您</item>
+        <!--<item>借款必须通过芝麻授权</item>-->
+        <item>借款必须通过身份识别</item>
+        <item>借款必须通过社保授权</item>
+        <item>借款必须通过公积金授权</item>
+        <item>让我们知道您在做什么</item>
+        <item>输入支付宝账号密码有助于通过</item>
+        <item>补充可以增加审批通过概率</item>
+    </string-array>
+
+    <!--<string-array name="credit_icon_font">-->
+        <!--<item>@string/iconfont_person_msg</item>-->
+        <!--<item>@string/iconfont_linker</item>-->
+        <!--<item>@string/iconfont_recive_bank</item>-->
+        <!--<item>@string/iconfont_phone_state</item>-->
+        <!--<item>@string/iconfont_zhimaxinyong</item>-->
+        <!--<item>@string/iconfont_work_msg</item>-->
+        <!--<item>@string/iconfont_zhifubao</item>-->
+        <!--<item>@string/iconfont_more_msg</item>-->
+    <!--</string-array>-->
+
+    <!--<array name="credit_img">-->
+        <!--<item>@drawable/credit_person</item>-->
+        <!--<item>@drawable/credit_linker</item>-->
+        <!--<item>@drawable/credit_bank</item>-->
+        <!--<item>@drawable/credit_phone</item>-->
+        <!--<item>@drawable/credit_zmxy</item>-->
+        <!--<item>@drawable/credit_work</item>-->
+        <!--<item>@drawable/credit_zfb</item>-->
+        <!--<item>@drawable/credit_more</item>-->
+    <!--</array>-->
+    <string name="credit_no_complete">未完善</string>
+    <string name="credit_completeing">认证中</string>
+    <string name="credit_complete">已完善</string>
+    <string name="credit_failed">认证失败</string>
+    <string name="credit_must">(必填)</string>
+    <string name="credit_no_must">(选填)</string>
+    <string name="credit_security">银行级数据加密保护</string>
+
+    <!-- 个人信息 -->
+    <string name="credit_person_title">个人信息</string>
+    <string name="credit_face_toast">请进行人脸识别</string>
+    <string name="credit_identity_title">身份识别</string>
+    <string name="credit_id_card_toast">请进行身份证识别</string>
+    <string name="credit_confirm_toast">请再次确认您的身份信息\n\n姓名：%1$s \n身份证号：%2$s</string>
+    <string name="credit_back_update">返回修改</string>
+    <string name="credit_confirm_submit">确认提交</string>
+    <string name="credit_scan_error">今日操作过于频繁，请明日再试</string>
+    <string name="credit_person_tips">身份认证信息保存后无法修改，请务必保证正确</string>
+    <!--<string name="person_face">人脸识别</string>-->
+    <string name="person_face">请衣着整齐，平视屏幕</string>
+    <string name="person_card">身份证识别</string>
+    <string name="person_name">姓名</string>
+    <string name="person_name_hint">通过身份证识别自动填充</string>
+    <string name="person_card_no_hint">通过身份证识别自动填充</string>
+    <string name="person_card_no">身份证</string>
+    <string name="person_education">学历</string>
+    <string name="person_education_hint">请选择学历</string>
+    <string name="person_address_now">现居地址</string>
+    <string name="person_address_now_toast">请选择现居地址</string>
+    <string name="person_address_now_hint">请填写具体街道门牌号</string>
+    <string name="person_marriage">婚姻状态</string>
+    <string name="person_live_time">居住时长</string>
+    <string name="person_first">请先完成个人信息认证</string>
+    <string name="person_edit_name">请输入您的姓名</string>
+
+    <!-- 工作信息 -->
+    <string name="credit_work_title">工作信息</string>
+    <string name="credit_work_tips">为保证借款申请顺利通讯，请务必填写真实信息</string>
+    <string name="work_company_name">单位名称</string>
+    <string name="work_company_name_hint">请填写单位名称</string>
+    <string name="work_company_phone">单位电话</string>
+    <string name="work_company_phone_hint">请填写单位电话</string>
+    <string name="work_company_address">单位所在地</string>
+    <string name="work_company_address_toast">请选择单位所在地</string>
+    <string name="work_company_address_hint">请填写具体街道门牌号</string>
+    <string name="work_photo">工作照片</string>
+    <string name="work_photo_hint">(选填，可提高通过率)</string>
+    <string name="work_time">工作时长</string>
+    <string name="work_photo_title">工作照片</string>
+    <string name="work_photo_tips">请提供可以证明您在此公司工作的照片,如含本人照片的工作照、名片、与公司Logo合影照等</string>
+    <string name="work_photo_tips2">温馨提示: 最多能上传3张照片</string>
+    <string name="work_photo_upload">上传</string>
+
+    <!-- 紧急联系人 -->
+    <string name="credit_linker_title">紧急联系人</string>
+    <string name="credit_lineal_kin">直系亲属</string>
+    <string name="credit_other_kin">其他联系人</string>
+    <string name="linker_relation">与本人关系</string>
+    <string name="linker_name">紧急联系人</string>
+    <string name="linker_phone_title">请选择%1$s号码</string>
+    <string name="linker_no_phone_num">无号码</string>
+    <string name="linker_the_same">紧急联系人不可重复</string>
+
+    <!-- 银行卡 -->
+    <string name="credit_bank_title">添加银行卡</string>
+    <string name="credit_bank_again_title">重新绑定银行卡</string>
+    <string name="credit_bank_title_bind">已绑银行卡</string>
+    <string name="credit_bank_tips">添加您的银行卡用于收款</string>
+    <string name="credit_bank_tips1">请填写银行卡信息</string>
+    <string name="bank_name">持卡人</string>
+    <string name="bank_select_bank">选择银行</string>
+    <string name="bank_select_bank_hint">请选择银行</string>
+    <string name="bank_card_no">卡号</string>
+    <string name="bank_card_no_hint">请输入银行卡号</string>
+    <string name="bank_card_no_error">请输入正确的卡号</string>
+    <string name="bank_phone">手机号</string>
+    <string name="bank_phone_hint">请输入银行预留手机号</string>
+    <string name="bank_phone_toast">请输入正确的手机号</string>
+    <string name="bank_verify_code">验证码</string>
+    <string name="bank_verify_send_code">获取验证码</string>
+    <string name="bank_verify_code_hint">请输入验证码</string>
+    <string name="bank_belong">所属银行</string>
+    <string name="bank_bank_card">银行卡号</string>
+    <string name="bank_bank_phone">预留手机号</string>
+    <string name="bank_success_tips"></string>
+    <string name="bank_bind_again">重新绑卡</string>
+
+    <!-- 芝麻信用 -->
+    <string name="credit_zmxy_title">芝麻信用</string>
+    <string name="zmxy_applied_tip">芝麻信用已授权</string>
+    <string name="zmxy_not_apply_tip">芝麻信用未授权</string>
+    <string name="zmxy_appling_tip">芝麻信用数据提交中</string>
+    <string name="zmxy_not_apply">去授权</string>
+    <string name="zmxy_applied">已授权</string>
+
+    <!-- 手机运营商认证 -->
+    <string name="credit_phone_title">手机运营商认证</string>
+    <string name="credit_phone_pwd_hint">请输入手机服务密码</string>
+    <string name="credit_phone_toast">运营商认证需要2-3分钟...</string>
+    <string name="phone_credited">已认证</string>
+    <string name="phone_crediting">认证中</string>
+    <string name="phone_go_credit">去认证</string>
+    <string name="phone_credited_tips">运营商认证已完成</string>
+    <string name="phone_crediting_tips">运营商认证中</string>
+    <string name="phone_no_credit_tips">运营商未认证</string>
+
+    <!-- 公积金认证 -->
+    <string name="credit_accumulation_fund_credit_title">公积金</string>
+    <string name="accumulation_fund_credited_tips">公积金已添加</string>
+    <string name="accumulation_fund_crediting_tips">公积金验证中</string>
+    <string name="accumulation_fund_no_credit_tips">公积金未添加</string>
+    <string name="accumulation_fund_credited">已添加</string>
+    <string name="accumulation_fund_crediting">验证中</string>
+    <string name="accumulation_fund_go_credit">添加我的公积金</string>
+
+    <!-- 我的更多 -->
+    <string name="credit_more_title">我的更多</string>
+    <string name="credit_more_tips">为了保证借款申请顺利通过,请务必填写真实信息</string>
+    <string name="credit_more_tb">淘宝账号</string>
+    <string name="credit_more_tb_hint">请输入个人淘宝账号</string>
+    <string name="credit_more_mail">常用邮箱</string>
+    <string name="credit_more_mail_hint">请输入邮箱</string>
+    <string name="credit_more_qq">QQ账号</string>
+    <string name="credit_more_qq_hint">请输入QQ账号</string>
+    <string name="credit_more_wx">微信账号</string>
+    <string name="credit_more_wx_hint">请输入微信账号</string>
+    <!-- 我的邀请码 -->
+    <string name="mine_invite_title">我的邀请码</string>
+    <string name="mine_invite_agent_apply">代理商申请</string>
+    <string name="mine_invite_do">立即邀请</string>
+    <string name="mine_invite_friend">邀请好友</string>
+    <string name="mine_invite_friend_record">邀请记录</string>
+    <string name="mine_invite_rate">分润比例</string>
+    <string name="mine_invite_rate_num1">每单最高奖励%1$s</string>
+    <string name="mine_invite_rate_num2">邀请好友，拿奖励</string>
+    <string name="mine_invite_bonus">我的奖金</string>
+    <string name="mine_wait_invite_award"></string>
+    <string name="mine_invite_award_details">待返奖金</string>
+    <!-- 邀请好友 -->
+    <string name="mine_invite_friend_title">邀请好友</string>
+    <string name="mine_invite_friend_share">分享给好友</string>
+    <!-- 我的奖金 -->
+    <string name="mine_invite_bonus_title">我的奖金</string>
+    <string name="mine_invite_bonus_withdraw">立即提现</string>
+    <string name="mine_invite_bonus_record">提现记录</string>
+    <string name="mine_invite_bonus_price">当前待返现奖励金额(元)</string>
+    <string name="mine_invite_bonus_award_detail">奖金明细</string>
+    <string name="mine_invite_bonus_history">待返现奖金将于每月的10日到款, 请关注手机动态</string>
+    <string name="mine_invite_bonus_tips">温馨提示:\n您的当前奖励金额将于每月的10日到款, 请关注手机动态</string>
+
+    <!-- 我的首页 -->
+    <string name="mine_total">总额度(元)</string>
+    <string name="mine_usemoney">剩余可借 %1$s元</string>
+    <string name="mine_up">提额额度</string>
+    <string name="mine_item_record">借款记录</string>
+    <string name="mine_item_message">完善资料</string>
+    <string name="mine_item_bank">收款银行卡</string>
+    <string name="mine_item_help">帮助中心</string>
+    <string name="mine_item_call">联系我们</string>
+    <string name="mine_item_code">我的邀请码</string>
+    <string name="mine_item_setting">设置</string>
+    <!-- 借款记录 -->
+    <string name="lendrecord_title">借款记录</string>
+    <string name="lendrecord_item_money">借款 %1$s元</string>
+    <!-- 设置 -->
+    <string name="mine_settings_title">设置</string>
+    <string name="mine_settings_about">关于我们</string>
+    <string name="mine_settings_idea">意见反馈</string>
+    <string name="mine_settings_idea_tip1">请输入您的反馈意见,我们会为您不断进步。</string>
+    <string name="mine_settings_idea_tip2">160/160</string>
+    <string name="mine_settings_idea_tip3">客服工作时间</string>
+    <string name="mine_settings_idea_tip4">9:00 ~ 18:00</string>
+    <string name="mine_settings_idea_submit">提交</string>
+    <string name="mine_settings_update_pwd">修改登录密码</string>
+    <string name="mine_settings_update_pwd_forget">忘记</string>
+    <string name="mine_settings_set_pwd">设置交易密码</string>
+    <string name="mine_settings_update_paypaw">修改交易密码</string>
+    <string name="mine_settings_exit">退出登录</string>
+
+    <!-- 修改密码 -->
+    <string name="settings_pwd_title">修改登录密码</string>
+    <string name="seetings_pwd_tips">两次输入的密码不一致</string>
+    <string name="settings_pwd_forget">忘记</string>
+    <string name="settings_pwd_pwd">原密码</string>
+    <string name="settings_pwd_pwd_hint">请输入原密码</string>
+    <string name="settings_pwd_new_pwd">新密码</string>
+    <string name="settings_pwd_new_pwd_hint">请输入新密码</string>
+    <string name="settings_pwd_confirm_pwd">确认新密码</string>
+    <string name="settings_pwd_confirm_pwd_hint">请确认新密码</string>
+    <string name="settings_pwd_desc">登录密码为6&#8211;16位字符，包括数字和字母</string>
+    <string name="settings_pwd_sub">完成</string>
+    <string name="settints_pay_update_new_title">新交易密码</string>
+    <string name="settints_pay_update_new_tips">请输入6位交易密码</string>
+    <string name="settints_pay_update_confirm_title">确认交易密码</string>
+    <string name="settints_pay_update_confirm_tips">请确认6位交易密码</string>
+    <string name="settints_pay_success">设置交易密码成功!</string>
+    <string name="settints_pay_set_tips">请输入6位交易密码</string>
+
+    <string name="settints_pay_update_tips">请输入您的原交易密码</string>
+    <string name="settings_forgot_pay_title">找回交易密码</string>
+    <string name="settings_forgot_pay_phone">手机号码</string>
+    <string name="settings_forgot_pay_name">真实姓名</string>
+    <string name="settings_forgot_pay_no">身份证号</string>
+    <string name="settings_forgot_pay_code">短信验证码</string>
+    <string name="settings_forgot_pay_phone_tip">请填写手机号码</string>
+    <string name="settings_forgot_pay_name_tip">请填写真实姓名</string>
+    <string name="settings_forgot_pay_name_not_chinese">真实姓名仅为中文</string>
+    <string name="settings_forgot_pay_no_tip">请填写身份证号</string>
+    <string name="settings_forgot_pay_code_tip">请输入短信验证码</string>
+
+    <!-- 代理商 -->
+    <string name="agent_invite_title"></string>
+    <string name="agent_award_title">奖励明细</string>
+    <string name="agent_award_tips_1">好友用户名/时间</string>
+    <string name="agent_award_tips_2">奖励金额(元)</string>
+    <string name="agent_withdraw_title">返现记录</string>
+    <string name="agent_withdraw_tips_1">操作名称/时间</string>
+    <string name="agent_withdraw_tips_2">金额(元)</string>
+    <string name="agent_withdraw_bonus">到账奖金</string>
+    <string name="agent_invite_record_title">邀请记录</string>
+    <string name="agent_invite_record_second_title">二级邀请记录</string>
+    <string name="agent_invite_record_tips_1">被邀请人</string>
+    <string name="agent_invite_record_tips_2">邀请时间</string>
+
+    <!--  分享  -->
+    <string name="share_cancel">取消</string>
+    <string name="share_wechat">微信好友</string>
+    <string name="share_wxcircle">微信朋友圈</string>
+    <string name="share_weibo">微博</string>
+    <string name="share_qq">QQ好友</string>
+    <string name="share_qq_zone">QQ空间</string>
+    <string name="share_sina">新浪微博</string>
+    <string name="share_qr_code">二维码</string>
+    <string name="share_title"></string>
+    <string name="share_content"></string>
+</resources>

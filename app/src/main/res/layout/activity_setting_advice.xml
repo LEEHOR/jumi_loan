@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical"
+    tools:context="com.cashloan.jumidai.ui.homeMine.activity.SettingAdviceActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="154dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/mine_settings_idea_tip1"
+            android:lines="9"
+            android:maxLength="160"
+            android:padding="10dp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/text_size_h2" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/input_feedback"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginEnd="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:textColor="@color/text_grey" />
+    </RelativeLayout>
+
+    <com.commom.widget.NoDoubleClickTextView
+        android:id="@+id/ndt_advice_submit"
+        style="@style/primary_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/y50"
+        android:text="@string/mine_settings_idea_submit" />
+
+</LinearLayout>

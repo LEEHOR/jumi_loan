@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">聚米袋</string>
+    <string name="app_download_description">聚米袋</string>
+
+    <string name="app_network_error">网络连接错误，请查看网络是否已连接!</string>
+    <string name="app_network_socket_timeout">网络连接超时!</string>
+
+    <string name="user_login_out">确定要登出?</string>
+    <string name="user_login_two">你的账号已在其他设备登录，如非本人操作请及时修改密码</string>
+    <string name="user_login_reset">重新登录</string>
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="protocol_download">下载协议</string>
+    <string name="rule">规则</string>
+    <string name="empty"></string>
+    <string name="placeholder_empty">暂无数据~</string>
+    <string name="placeholder_empty_message">暂无消息</string>
+    <string name="placeholder_empty_notice">暂无公告</string>
+    <string name="placeholder_empty_record">您还没有借款记录哦~</string>
+    <string name="placeholder_empty_invite_record">暂无邀请记录~</string>
+    <string name="placeholder_empty_card">暂无银行卡</string>
+
+    <string name="warming_notice">温馨提示：</string>
+    <string name="remark">备注</string>
+
+    <string name="step_next">下一步</string>
+    <string name="step_complete">完成</string>
+    <string name="step_submit">提交</string>
+    <string name="step_confirm">确定</string>
+    <string name="step_open">立即开通</string>
+    <string name="step_visit">先去逛逛</string>
+    <string name="page_loading">正在加载...</string>
+
+    <string name="verification_code">验证码</string>
+    <string name="verification_code_hint">请输入验证码</string>
+    <string name="verification_code_get">获取验证码</string>
+
+    <string name="go_bind">去绑定</string>
+    <string name="go_open">去开通</string>
+    <string name="go_test">去测试</string>
+    <string name="go_auth">去授权</string>
+    <string name="go_setting">去设置</string>
+    <string name="go_stroll">再去逛逛</string>
+    <string name="go_evaluate">去评测</string>
+    <string name="call_custom_service">联系客服</string>
+
+    <string name="status_failed">认证不通过</string>
+    <string name="status_succeed">已认证</string>
+
+    <string name="record">记录</string>
+
+    <!-- 产品 -->
+    <string name="understand_product">产品介绍</string>
+    <string name="product_introduction">产品介绍</string>
+    <string name="product_description">产品说明</string>
+    <string name="product_name">产品名称</string>
+    <string name="product_sample">产品简介</string>
+    <string name="security_assurance">安全保证</string>
+    <string name="lock_period">锁定期</string>
+    <string name="investment_term">投资期限</string>
+    <string name="into_rule">转入规则</string>
+    <string name="out_rule">转出规则</string>
+    <string name="income_calculation">收益计算</string>
+    <string name="cost_description">费用说明</string>
+
+    <string name="bar">--</string>
+    <string name="minute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="day">天</string>
+    <string name="today">当天</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="unit_month">个月</string>
+    <string name="year">年</string>
+    <string name="times">次</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_yuan_sign">￥</string>
+    <string name="unit_yuan">元</string>
+    <string name="yuan">%1$s元</string>
+    <string name="days">%1$s天</string>
+    <string name="months">%1$s月</string>
+    <string name="years">%1$s年</string>
+    <string name="RMB">￥%1$s</string>
+    <string name="count">%1$s笔</string>
+    <string name="piece">%1$s张</string>
+    <string name="each">%1$s份</string>
+    <string name="percent">%1$s%%</string>
+    <string name="save">保存</string>
+    <string name="input">请输入</string>
+    <string name="select">请选择</string>
+    <string name="other">其他</string>
+    <!-- 引导页图片 -->
+    <array name="guideImages">
+        <item>@drawable/guide_01</item>
+        <item>@drawable/guide_02</item>
+        <item>@drawable/guide_03</item>
+    </array>
+    <!-- tab -->
+    <string name="home_index">借款</string>
+    <string name="home_repay">还款</string>
+    <string name="home_mine">我的</string>
+
+    <!-- 密码输入 -->
+    <string name="pop_pwd_title">请输入交易密码</string>
+    <string name="pop_pwd_forgot">忘记密码?</string>
+    <string name="pop_pwd_money">借款金额</string>
+
+
+    <!--ocr认证-->
+    <string name="ocrdefailed">活体认证未通过，无法保存，请重新进行认证！</string>
+
+
+    <string name="update_now">立即更新</string>
+    <string name="waitamontent">以后再说</string>
+    <string name="feedetail">费用详情</string>
+    <string name="uoloaded">已上传</string>
+    <string name="facehint">人脸识别时，请确保光线清晰</string>
+    <string name="findmaphint">查找小区、大厦、学校等</string>
+    <string name="cancle">取消</string>
+    <string name="downloadbackground">后台下载</string>
+    <string name="select_repay_way_title">选择付款方式</string>
+    <string name="apliapyhint">手续费千分之二,由支付宝收取</string>
+    <string name="alipayway">支付宝转账</string>
+    <string name="status_oval">已授权</string>
+    <string name="back_surface">银行级数据加密保护</string>
+    <string name="ready_status">前往授权</string>
+    <string name="vertifyhint">基本信息认证</string>
+    <string name="operator">运营商</string>
+    <string name="bank">银行卡</string>
+    <string name="zhima">芝麻信用</string>
+    <string name="workinfo">工作信息</string>
+    <string name="moreinfo">更多信息</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
