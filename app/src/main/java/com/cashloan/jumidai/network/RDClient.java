@@ -135,7 +135,7 @@ public class RDClient {
         if (getServiceMap().containsKey(clazz.getSimpleName())) {
             return (T) getServiceMap().get(clazz.getSimpleName());
         }
-        Logger.w("RDClient", "need to create a new " + clazz.getSimpleName());
+       // Logger.w("RDClient", "need to create a new " + clazz.getSimpleName());
         T service = RDClient.getInstance().retrofit.create(clazz);
         getServiceMap().put(clazz.getSimpleName(), service);
         return service;
