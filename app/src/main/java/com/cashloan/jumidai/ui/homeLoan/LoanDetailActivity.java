@@ -168,8 +168,8 @@ public class LoanDetailActivity extends BaseMvpActivity {
 
 
         double repay = (ConverterUtil.getDouble(realMoney) + ConverterUtil.getDouble(serviceFee)) / 1.0;
-        System.out.println("repay" + repay);
-        System.out.println("repay" + (ConverterUtil.getDouble(realMoney) + ConverterUtil.getDouble(serviceFee)));
+      //  System.out.println("repay" + repay);
+       // System.out.println("repay" + (ConverterUtil.getDouble(realMoney) + ConverterUtil.getDouble(serviceFee)));
         this.repayMoney = String.valueOf(repay);
 
 
@@ -187,7 +187,7 @@ public class LoanDetailActivity extends BaseMvpActivity {
         Constant.IMEI = getImei.getimei();
         Constant.PHONEBRAND = DeviceUtil.getPhoneBrand();
         Constant.PHONEMODEL = DeviceUtil.getPhoneModel();
-        System.out.println("ImeI2" + Constant.IMEI + "/" + Constant.IMSI + "/" + Constant.ANDROID_ID + "/" + Constant.PHONEBRAND + Constant.PHONEMODEL);
+      //  System.out.println("ImeI2" + Constant.IMEI + "/" + Constant.IMSI + "/" + Constant.ANDROID_ID + "/" + Constant.PHONEBRAND + Constant.PHONEMODEL);
     }
 
 
